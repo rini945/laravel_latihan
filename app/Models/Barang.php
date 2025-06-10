@@ -2,16 +2,12 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Barang extends Model
 {
-  // protected $table = 'barang';  //ini namanya properti
+    use HasFactory;
 
-  protected $fillable = [
-        'kode',
-        'nama',
-        'harga',
-        'stok',
-    ];
+    protected $fillable = ['kode', 'nama', 'harga', 'stok'];
 }
